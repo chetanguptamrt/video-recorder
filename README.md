@@ -2,17 +2,24 @@
 <h3 align="center">VIDEO RECORDER</h3>
 <p align="center"><strong><code>@capacitor-community/video-recorder</code></strong></p>
 <br>
-<p align="center" style="font-size:50px;color:red"><strong>CAPACITOR 5</strong></p><br>
+<p align="center" style="font-size:50px;color:red"><strong>CAPACITOR 7</strong></p><br>
 <br>
 
 capacitor plugin to record video
 
 ## Install
 
-Capacitor v6
+Capacitor v7
 
 ```bash
 npm install @capacitor-community/video-recorder
+npx cap sync
+```
+
+Capacitor v6
+
+```bash
+npm install @capacitor-community/video-recorder@6
 npx cap sync
 ```
 
@@ -351,16 +358,17 @@ addListener(eventName: 'onVolumeInput', listenerFunc: (event: { value: number; }
 
 #### VideoRecorderPreviewFrame
 
-| Prop                | Type                                                                |
-| ------------------- | ------------------------------------------------------------------- |
-| **`id`**            | <code>string</code>                                                 |
-| **`stackPosition`** | <code>'front' \| 'back'</code>                                      |
-| **`x`**             | <code>number</code>                                                 |
-| **`y`**             | <code>number</code>                                                 |
-| **`width`**         | <code>number \| 'fill'</code>                                       |
-| **`height`**        | <code>number \| 'fill'</code>                                       |
-| **`borderRadius`**  | <code>number</code>                                                 |
-| **`dropShadow`**    | <code>{ opacity?: number; radius?: number; color?: string; }</code> |
+| Prop                 | Type                                                                | Description                                                                            | Default           |
+| -------------------- | ------------------------------------------------------------------- | -------------------------------------------------------------------------------------- | ----------------- |
+| **`id`**             | <code>string</code>                                                 |                                                                                        |                   |
+| **`stackPosition`**  | <code>'front' \| 'back'</code>                                      |                                                                                        |                   |
+| **`x`**              | <code>number</code>                                                 |                                                                                        |                   |
+| **`y`**              | <code>number</code>                                                 |                                                                                        |                   |
+| **`width`**          | <code>number \| 'fill'</code>                                       |                                                                                        |                   |
+| **`height`**         | <code>number \| 'fill'</code>                                       |                                                                                        |                   |
+| **`borderRadius`**   | <code>number</code>                                                 |                                                                                        |                   |
+| **`dropShadow`**     | <code>{ opacity?: number; radius?: number; color?: string; }</code> |                                                                                        |                   |
+| **`mirrorFrontCam`** | <code>boolean</code>                                                | Whether to mirror the front camera preview horizontally. Only applies to front camera. | <code>true</code> |
 
 
 #### PluginListenerHandle
